@@ -64,7 +64,7 @@ export class DetailsComponent implements OnInit {
     this.crudService.delete(this.currentTutorial.id).subscribe(
       (response) => {
         console.log(response);
-        this.router.navigate(['/tutorials']);
+        this.router.navigate(['/crud']);
       },
       (error) => {
         console.log(error);
